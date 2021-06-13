@@ -97,13 +97,6 @@
 
                         
                         <li>
-                            <a href="/archives/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -112,6 +105,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">Archives</a>
                         </li>
                         
                     
@@ -195,9 +195,11 @@
         <!-- 标签云 -->
         <div id='tag_cloud' class="tags">
             
-                <a href="#Java" title="Java" rel="1">Java</a>
+                <a href="#Java" title="Java" rel="2">Java</a>
             
-                <a href="#Spring" title="Spring" rel="1">Spring</a>
+                <a href="#Spring Boot" title="Spring Boot" rel="2">Spring Boot</a>
+            
+                <a href="#Redis" title="Redis" rel="1">Redis</a>
             
         </div>
 
@@ -224,11 +226,26 @@
             </div>
             <hr>
             
+              <!-- <li class="listing-item">
+              <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+              </li> -->
+             <div class="post-preview">
+                 <a href="/2021/06/13/sring-redis-traffic-stat/">
+                    <h2 class="post-title">
+                        简单访问量统计(Spring Boot+Redis+Echarts)
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            <hr>
+            
         </div>
         
         <div class="one-tag-list">
-            <span class="fa fa-tag listing-seperator" id="Spring">
-                <span class="tag-text">Spring</span>
+            <span class="fa fa-tag listing-seperator" id="Spring Boot">
+                <span class="tag-text">Spring Boot</span>
             </span>
             
               <!-- <li class="listing-item">
@@ -239,6 +256,43 @@
                  <a href="/2021/05/31/spring-junit-diff/">
                     <h2 class="post-title">
                         Spring测试-Junit4和Junit5资源引入方式
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            <hr>
+            
+              <!-- <li class="listing-item">
+              <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+              </li> -->
+             <div class="post-preview">
+                 <a href="/2021/06/13/sring-redis-traffic-stat/">
+                    <h2 class="post-title">
+                        简单访问量统计(Spring Boot+Redis+Echarts)
+                    </h2>
+                    
+                </a>
+                <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+            </div>
+            <hr>
+            
+        </div>
+        
+        <div class="one-tag-list">
+            <span class="fa fa-tag listing-seperator" id="Redis">
+                <span class="tag-text">Redis</span>
+            </span>
+            
+              <!-- <li class="listing-item">
+              <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+              <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+              </li> -->
+             <div class="post-preview">
+                 <a href="/2021/06/13/sring-redis-traffic-stat/">
+                    <h2 class="post-title">
+                        简单访问量统计(Spring Boot+Redis+Echarts)
                     </h2>
                     
                 </a>
@@ -311,11 +365,15 @@
                     <div class="tags">
                         
                             
-                            <a href="/tags/#Java" title="Java" rel="1">Java</a>
+                            <a href="/tags/#Java" title="Java" rel="2">Java</a>
                             
                         
                             
-                            <a href="/tags/#Spring" title="Spring" rel="1">Spring</a>
+                            <a href="/tags/#Spring Boot" title="Spring Boot" rel="2">Spring Boot</a>
+                            
+                        
+                            
+                            <a href="/tags/#Redis" title="Redis" rel="1">Redis</a>
                             
                         
                     </div>

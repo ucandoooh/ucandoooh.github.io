@@ -97,13 +97,6 @@
 
                         
                         <li>
-                            <a href="/archives/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -112,6 +105,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archives/">Archives</a>
                         </li>
                         
                     
@@ -174,7 +174,7 @@
                         
                           <a class="tag" href="/tags/#Java" title="Java">Java</a>
                         
-                          <a class="tag" href="/tags/#Spring" title="Spring">Spring</a>
+                          <a class="tag" href="/tags/#Spring Boot" title="Spring Boot">Spring Boot</a>
                         
                     </div>
                     <h1>Spring测试-Junit4和Junit5资源引入方式</h1>
@@ -262,7 +262,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="comment">//@ImportResource(&quot;classpath:spring/spring-dao.xml&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AppApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		SpringApplication.run(AppApplication.class, args);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h3 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h3><p><img src="/2021/05/31/spring-junit-diff/project-structure.jpg" alt="project-structure"></p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p><img src="/2021/05/31/spring-junit-diff/project-structure.jpg" alt="project-structure"></p>
 <p>因为项目是分模块管理，如上图所示。</p>
 <p>Dao放在persistent模块，Web启动类AppApplication放在web模块</p>
 <p>当在persistent模块测试启动AppApplication，@ImportResource(“classpath:spring/spring-dao.xml”)加载的是persistent模块classpath下的spring/spring-dao.xml。</p>
@@ -285,6 +285,10 @@
                 
 
                 <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2021/06/13/sring-redis-traffic-stat/" data-toggle="tooltip" data-placement="top" title="简单访问量统计(Spring Boot+Redis+Echarts)">&larr; Previous Post</a>
+                        </li>
                     
                     
                 </ul>
@@ -319,7 +323,7 @@
                        
                           <a class="tag" href="/tags/#Java" title="Java">Java</a>
                         
-                          <a class="tag" href="/tags/#Spring" title="Spring">Spring</a>
+                          <a class="tag" href="/tags/#Spring Boot" title="Spring Boot">Spring Boot</a>
                         
                     </div>
                 </section>

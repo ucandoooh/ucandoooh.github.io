@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ucandoooh.com.cn/2021/06/13/spring-redis-traffic-stat/</loc>
+    <loc>https://ucandoooh.com.cn/2021/05/31/spring-junit-diff/</loc>
     
-    <lastmod>2021-06-13</lastmod>
+    <lastmod>2021-06-15</lastmod>
     
   </url>
   
   <url>
-    <loc>https://ucandoooh.com.cn/2021/05/31/spring-junit-diff/</loc>
+    <loc>https://ucandoooh.com.cn/2021/06/13/spring-redis-traffic-stat/</loc>
     
     <lastmod>2021-06-13</lastmod>
     
@@ -46,7 +46,7 @@
 
   <url>
     <loc>https://ucandoooh.com.cn/</loc>
-    <lastmod>2021-06-13</lastmod>
+    <lastmod>2021-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -54,21 +54,21 @@
   
   <url>
     <loc>https://ucandoooh.com.cn/tags/Java/</loc>
-    <lastmod>2021-06-13</lastmod>
+    <lastmod>2021-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ucandoooh.com.cn/tags/Spring-Boot/</loc>
-    <lastmod>2021-06-13</lastmod>
+    <lastmod>2021-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://ucandoooh.com.cn/tags/Redis/</loc>
-    <lastmod>2021-06-13</lastmod>
+    <lastmod>2021-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

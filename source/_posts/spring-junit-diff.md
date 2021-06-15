@@ -2,8 +2,8 @@
 title: Spring测试-Junit4和Junit5资源引入方式
 date: 2021-05-31 22:57:11
 tags:
-    - Java
-    - Spring
+  - Java
+  - Spring Boot
 ---
 
 ### 环境
@@ -13,14 +13,14 @@ tags:
 
 ***
 
-### 前提
+### 准备
 
 > 对于创建配置这块简略带过，主要阐述Junit4和Junit5的资源引入方式
 
 1. <https://start.spring.io/>快速搭建引入Web和Mybatis依赖的Maven项目，导入IDEA，Ultimate版本自带构建Spring Boot。
 2. [MVN仓库](https://mvnrepository.com/)查找依赖引入，引入Druid数据库连接池、MySql Connector、Junit
 3. 创建Entity实体类、Dao数据库存取对象以及Mapper，Mybatis配置、Spring配置
-4. 关键配置：spring-dao.xml中扫描Dao的配置
+4. 关键配置：`spring-dao.xml`中扫描Dao的配置
 
 ```xml
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
@@ -59,9 +59,9 @@ public class SeckillDaoTest1 {
 }
 ```
 
-1. @RunWith加载SpringJUnit4ClassRunner测试驱动，用于跑Spring测试
-2. @ContextConfiguration加载资源文件，源文件路径下的spring/spring-dao.xml，用于注入Dao
-3. 此处使用的断言是org.junit.Assert类的静态方法，判断是否成功加载spring-dao.xml，扫描注入了Dao，成功则Dao不为null
+1. `@RunWith`加载`SpringJUnit4ClassRunner`测试驱动，用于跑Spring测试
+2. `@ContextConfiguration`加载资源文件，源文件路径下的`spring/spring-dao.xml`，用于注入Dao
+3. 此处使用的断言是`org.junit.Assert`类的静态方法，判断是否成功加载`spring-dao.xml`，扫描注入了Dao，成功则Dao不为null
 4. 测试通过不抛异常，并有log打印出加载资源的过程
 
 ---
@@ -87,12 +87,12 @@ class SeckillDaoTest2 {
 }
 ```
 
-1. @ExtendWith(SpringExtension.class)加载Spring测试框架
-2. @ContextConfiguration加载资源文件，源文件路径下的spring/spring-dao.xml，用于注入Dao
+1. `@ExtendWith(SpringExtension.class)`加载Spring测试框架
+2. `@ContextConfiguration`加载资源文件，源文件路径下的`spring/spring-dao.xml`，用于注入Dao
 
-> 以上两者可以用@SpringJUnitConfig代替，简洁明了
+> 以上两者可以用`@SpringJUnitConfig`代替，简洁明了
 
-3. 此处使用的断言是org.junit.jupiter.api.Assertions类的静态方法，判断是否成功加载spring-dao.xml，扫描注入了Dao，成功则Dao不为null
+3. 此处使用的断言是`org.junit.jupiter.api.Assertions`类的静态方法，判断是否成功加载`spring-dao.xml`，扫描注入了Dao，成功则Dao不为null
 4. 测试通过不抛异常，并有log打印出加载资源的过程
 
 #### 测试启动Web服务
@@ -112,9 +112,9 @@ class SeckillDaoTest2 {
 }
 ```
 
-1. 使用@SpringBootTest加载Web启动类AppApplication
-2. webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT使用本地的一个随机端口启动服务
-3. 配合使用@ContextConfiguration加载资源或者在AppApplication中加上@ImportResource
+1. 使用`@SpringBootTest`加载Web启动类`AppApplication`
+2. `webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT`使用本地的一个随机端口启动服务
+3. 配合使用`@ContextConfiguration`加载资源或者在`AppApplication`中加上`@ImportResource`
 
 > 注意切勿重复加载资源，不然会报错
 
@@ -132,21 +132,21 @@ public class AppApplication {
 
 ---
 
-### 题外话
+### 注意事项
 
 ![project-structure](project-structure.jpg)
 
 因为项目是分模块管理，如上图所示。
 
-Dao放在persistent模块，Web启动类AppApplication放在web模块
+Dao放在`persistent`模块，Web启动类`AppApplication`放在web模块
 
-当在persistent模块测试启动AppApplication，@ImportResource("classpath:spring/spring-dao.xml")加载的是persistent模块classpath下的spring/spring-dao.xml。
+当在`persistent`模块测试启动`AppApplication`，`@ImportResource("classpath:spring/spring-dao.xml")`加载的是`persistent`模块classpath下的`spring/spring-dao.xml`。
 
-而当单独在web模块启动AppApplication来启动web会提示
+而当单独在`web`模块启动`AppApplication`来启动web会提示
 
 **class path resource [spring/spring-dao.xml] cannot be opened because it does not exist**
 
-改成@ImportResource("classpath*:spring/spring-dao.xml")就可以了
+改成`@ImportResource("classpath*:spring/spring-dao.xml")`就可以了
 
 原因：
 

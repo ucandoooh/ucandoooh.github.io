@@ -13,11 +13,11 @@
 
     <title>
         
-          Ucandoooh&#39;s Blog
+          Idea常用快捷键 - Ucandoooh&#39;s Blog
         
     </title>
 
-    <link rel="canonical" href="https://ucandoooh.com.cn/">
+    <link rel="canonical" href="https://ucandoooh.com.cn/2021/10/04/idea-shortcut-key/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -154,17 +154,35 @@
 
 
     <!-- Main Content -->
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    
+<!-- Image to hack wechat -->
+<!-- <img src="https://ucandoooh.com.cn/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/home-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Ucandoooh&#39;s Blog</h1>
-                    <!--<hr class="small">-->
-                    <span class="subheading">IT Sharing</span>
-                    <span id="busuanzi_container_page_pv" style="display: inline;"> 本站总阅读量
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                          <a class="tag" href="/tags/#Idea" title="Idea">Idea</a>
+                        
+                    </div>
+                    <h1>Idea常用快捷键</h1>
+                    <h2 class="subheading"></h2>
+                    <span id="busuanzi_container_page_pv" style="display: inline;"> 本文阅读量
                         <span id="busuanzi_value_page_pv"></span>次
+                    </span>
+                    <span class="meta">
+                        Posted by Ucandoooh on
+                        2021-10-04
                     </span>
                 </div>
             </div>
@@ -172,245 +190,97 @@
     </div>
 </header>
 
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
-
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
-
-<!-- USE SIDEBAR -->
     <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                <!-- Main Content -->
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-
-<div class="post-preview">
-
-    <a href="/2021/10/04/optimization-troubleshooting-JVM-Linux/">
-        <h2 class="post-title">
-            Linux下性能监控与JVM排错
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            Linux性能监控
-pidstat [ 选项 ] [ &lt;时间间隔&gt; ] [ &lt;次数&gt; ]pidstat 主要用于监控全部或指定进程占用系统资源的情况
-
-
-全局（CPU、内存、磁盘）
-1top / uptime
-CPU
-123vmstat -n 2 3   （延迟2秒共采样3次)mpstat -P ALL 2pidstat -u 1 -p xxxx
-内存
-12free ......
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Ucandoooh on
-        2021-10-04
-    </p>
-
-</div>
+                <h2 id="查找类、文件、方法、变量"><a href="#查找类、文件、方法、变量" class="headerlink" title="查找类、文件、方法、变量"></a>查找类、文件、方法、变量</h2><p><kbd>ctrl</kbd>+<kbd>N</kbd>：查类；</p>
+<p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>N</kbd>：查文件；</p>
+<p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>alt</kbd>+<kbd>N</kbd>：查项目中的方法/变量；</p>
+<p><kbd>alt</kbd>+<kbd>F7</kbd>：查类、方法、变量引用的地方</p>
+<p><kbd>ctrl</kbd>+<kbd>O</kbd>：查所有可重写的方法</p>
+<p><kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>H</kbd>：方法的调用关系</p>
 <hr>
-
-<div class="post-preview">
-
-    <a href="/2021/10/04/idea-shortcut-key/">
-        <h2 class="post-title">
-            Idea常用快捷键
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            查找类、文件、方法、变量ctrl+N：查类；
-ctrl+shift+N：查文件；
-ctrl+shift+alt+N：查项目中的方法/变量；
-alt+F7：查类、方法、变量引用的地方
-ctrl+O：查所有可重写的方法
-ctrl+alt+H：方法的调用关系
-
-定位ctrl+E：最近打开文件列表，按两次只展示修改过的；
-ctrl+shift+E：定位最近打开文件列表，按两次只展示修改过的；
-ctr......
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Ucandoooh on
-        2021-10-04
-    </p>
-
-</div>
+<h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p><kbd>ctrl</kbd>+<kbd>E</kbd>：最近打开文件列表，按两次只展示修改过的；</p>
+<p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>E</kbd>：定位最近打开文件列表，按两次只展示修改过的；</p>
+<p><kbd>ctrl</kbd>+<kbd>F12</kbd>：类中快速定位某方法/属性</p>
+<p><kbd>ctrl</kbd>+<kbd>G</kbd>：定位行</p>
 <hr>
-
-<div class="post-preview">
-
-    <a href="/2021/06/13/spring-redis-traffic-stat/">
-        <h2 class="post-title">
-            简单访问量统计(Spring Boot+Redis+Echarts)
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            环境
-IDE - IDEA
-Spring Boot + Redis - 快速构建部署简单的Web服务
-Thymeleaf - 模板引擎
-VMware Workstation（Red Hat + Redis） - 部署Redis服务
-ECharts - 前端使用柱状图展示访问量
-
-
-准备1. 虚拟机 - Red Hat - Redis服务Redis官网 最新的安装信息：
-1234$ wget ......
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Ucandoooh on
-        2021-06-13
-    </p>
-
-</div>
+<h2 id="查找-替换文本"><a href="#查找-替换文本" class="headerlink" title="查找/替换文本"></a>查找/替换文本</h2><p><kbd>ctrl</kbd>+<kbd>F</kbd>：查找；</p>
+<p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>F</kbd>：工程内查文本；</p>
+<p><kbd>F3</kbd>：向下查；<kbd>shift</kbd>+<kbd>F3</kbd>：向上查</p>
+<p><kbd>ctrl</kbd>+<kbd>R</kbd>：替换</p>
 <hr>
-
-<div class="post-preview">
-
-    <a href="/2021/05/31/spring-junit-diff/">
-        <h2 class="post-title">
-            Spring测试-Junit4和Junit5资源引入方式
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-            环境
-IDE - IDEA（Community）
-Framework - Spring Boot，Mybatis
-
-
-准备
-对于创建配置这块简略带过，主要阐述Junit4和Junit5的资源引入方式
-
-
-https://start.spring.io/快速搭建引入Web和Mybatis依赖的Maven项目，导入IDEA，Ultimate版本自带构建Spring Boot。
-MVN仓库查找依赖......
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Ucandoooh on
-        2021-05-31
-    </p>
-
-</div>
+<h2 id="代码生成-封装"><a href="#代码生成-封装" class="headerlink" title="代码生成/封装"></a>代码生成/封装</h2><p><kbd>ctrl</kbd>+<kbd>J</kbd>：常用的封装代码</p>
+<p><kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>T</kbd>：选中代码包裹</p>
+<p><kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>V</kbd>：快速声明变量</p>
+<p><kbd>alt</kbd>+<kbd>insert</kbd>：快速方法生成（getter/setter）</p>
 <hr>
+<h2 id="提升代码可读性、代码质量、编码速度"><a href="#提升代码可读性、代码质量、编码速度" class="headerlink" title="提升代码可读性、代码质量、编码速度"></a>提升代码可读性、代码质量、编码速度</h2><p><kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>L</kbd>：格式化</p>
+<p><kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>O</kbd>：自动导包/删除无用包</p>
+<p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>/</kbd>：代码块注释</p>
+<p><kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>+</kbd>/<kbd>-</kbd>：方法展开/收起</p>
+<p><kbd>alt</kbd>+<kbd>鼠标左键</kbd>：多行编辑</p>
 
 
+                <hr>
 
-<!-- Pager -->
+                
 
-<ul class="pager">
-    
-    
-</ul>
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2021/10/04/optimization-troubleshooting-JVM-Linux/" data-toggle="tooltip" data-placement="top" title="Linux下性能监控与JVM排错">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2021/06/13/spring-redis-traffic-stat/" data-toggle="tooltip" data-placement="top" title="简单访问量统计(Spring Boot+Redis+Echarts)">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
 
+                
 
-
-                <!-- 如果开启评论功能 -->
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
                 
 
             </div>
+    <!-- Side Catalog Container -->
+        
+
     <!-- Sidebar Container -->
+
             <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
                 <!-- Featured Tags -->
                 
                 <section>
                     <!-- no hr -->
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-                        
-                            
-                            <a href="/tags/#Linux" title="Linux" rel="1">Linux</a>
-                            
-                        
-                            
-                            <a href="/tags/#JVM" title="JVM" rel="1">JVM</a>
-                            
-                        
-                            
-                            <a href="/tags/#Idea" title="Idea" rel="1">Idea</a>
-                            
-                        
-                            
-                            <a href="/tags/#Java" title="Java" rel="2">Java</a>
-                            
-                        
-                            
-                            <a href="/tags/#Spring Boot" title="Spring Boot" rel="2">Spring Boot</a>
-                            
-                        
-                            
-                            <a href="/tags/#Redis" title="Redis" rel="1">Redis</a>
-                            
+                       
+                          <a class="tag" href="/tags/#Idea" title="Idea">Idea</a>
                         
                     </div>
                 </section>
                 
 
-                <!-- Short About -->
-                <section class="visible-md visible-lg">
-                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
-                    <div class="short-about">
-
-                        
-                            <img src="/img/avatar.jpg" />
-                        
-
-                        
-                            <p>Try to be Full Stack Developer</p>
-                        
-
-                        <!-- SNS Link -->
-                        <ul class="list-inline">
-                            
-                            
-                            
-
-                            
-
-                            
-
-                            
-                                <li>
-                                    <a target="_blank"  href="https://github.com/ucandoooh">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                            
-                            
-                            
-                            
-                        </ul>
-                    </div>
-                </section>
-                
                 <!-- Friends Blog -->
                 
                 <hr>
@@ -423,9 +293,66 @@ MVN仓库查找依赖......
                 </ul>
                 
             </div>
-        
+
+        </div>
     </div>
-</div>
+</article>
+
+
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "hexo-theme-huxblog";
+    var disqus_identifier = "https://ucandoooh.com.cn/2021/10/04/idea-shortcut-key/";
+    var disqus_url = "https://ucandoooh.com.cn/2021/10/04/idea-shortcut-key/";
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- disqus 公共JS代码 end -->
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
 
 
     <!-- Footer -->
